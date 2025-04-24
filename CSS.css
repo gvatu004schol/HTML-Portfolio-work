@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    background: linear-gradient(90deg, #0119f0, #18a5eb, #00fffb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 1s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background-color: #afc860;
+    color: hsl(0, 66%, 72%);
+    padding: 10px 0;
+    text-align: center;
+    background: linear-gradient(45deg, #9bff43, #086a09, #00ff15);
+    background-size: 400% 400%;
+    animation: gradientAnimation 1s ease infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #9f0101;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #ff0000, #70052b, #ff8c00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.project-screenshot{
+    width: 300px;
+    height: auto;
+}
+.section {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+
+.project img {
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+form button {
+    background-color: #0faaaa;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #84f5fb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        width: 100px;
+    }
+}
